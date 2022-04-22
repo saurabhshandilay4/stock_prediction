@@ -58,7 +58,7 @@ X_train =X_train.reshape(X_train.shape[0],X_train.shape[1] , 1)
 X_test = X_test.reshape(X_test.shape[0],X_test.shape[1] , 1)
 
 
-model = load_weights('keras_model65.h5')
+model = load_model('keras_model_json.h5')
 
 train_predict=model.predict(X_train)
 test_predict=model.predict(X_test)
